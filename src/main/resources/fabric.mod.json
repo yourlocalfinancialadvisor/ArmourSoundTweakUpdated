@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "Apache-2.0",
 	"icon": "assets/armour-sound-tweak/icon.png",
 	"environment": "client",
 	"entrypoints": {
