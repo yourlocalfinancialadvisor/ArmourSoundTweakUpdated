@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "armour-sound-tweak",
+	"version": "${version}",
+	"name": "Armour Sound Tweak Updated",
+	"description": "Plays the respective equip sound when unequipping armor in a menu. Updated from the mod by HeckinChloe.",
+	"authors": [
+		"mr_chumbucket"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/armour-sound-tweak/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"mr_chumbucket.armoursoundtweak.ArmourSoundTweak"
+		],
+		"modmenu": [
+			"mr_chumbucket.armoursoundtweak.integration.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.21.2",
+		"java": ">=21"
+	}
+}
