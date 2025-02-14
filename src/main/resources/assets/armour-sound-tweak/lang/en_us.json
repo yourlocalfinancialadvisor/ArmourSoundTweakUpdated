@@ -1,9 +1,8 @@
 {
-  "armoursoundtweak": "Armor Sound Tweak",
-  "armoursoundtweak.sounds": "Equipment Sounds",
-  "armoursoundtweak.sounds.armor": "Armor",
-  "armoursoundtweak.sounds.elytra": "Elytra",
-  "armoursoundtweak.sounds.skulls": "Skulls",
-  "armoursoundtweak.sounds.pumpkins": "Pumpkins",
-  "armoursoundtweak.sounds.anything": "Anything"
+  "armoursoundtweak.midnightconfig.title": "Armor Sound Tweak Updated",
+  "armoursoundtweak.midnightconfig.sounds": "Equipment Sounds",
+  "armoursoundtweak.midnightconfig.armour": "Armor",
+  "armoursoundtweak.midnightconfig.elytra": "Elytra",
+  "armoursoundtweak.midnightconfig.skulls": "Skulls",
+  "armoursoundtweak.midnightconfig.pumpkins": "Pumpkins"
 }
