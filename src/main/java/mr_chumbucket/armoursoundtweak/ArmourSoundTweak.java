@@ -135,8 +135,8 @@ public final class ArmourSoundTweak implements ClientModInitializer {
 	private static @Nullable SoundEvent getEquipSound(final ItemStack itemStack) {
 		final var item = itemStack.getItem();
 
-		if ((armor() && (item instanceof ArmorItem)) || (elytra() && (item.getComponents().contains(DataComponentTypes.GLIDER)))) {
-			return item.getComponents().get(DataComponentTypes.EQUIPPABLE).equipSound().value();
+		if ((armor() && (item instanceof ArmorItem)) || (elytra() && (item instanceof ElytraItem))) {
+			return ((Equipment) item).getEquipSound().value();
 		}
 
 		if ((pumpkins() && (item == Items .CARVED_PUMPKIN)) || anything() || (skulls() && isSkull(item))) {
