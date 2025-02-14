@@ -9,7 +9,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.AbstractSkullBlock;
-import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;
+import net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.component.DataComponentTypes;
@@ -38,9 +38,9 @@ public final class ArmourSoundTweak implements ClientModInitializer {
 
 	public static final boolean DEFAULT_ARMOR = true;
 	public static final boolean DEFAULT_ELYTRA = true;
-	public static final boolean DEFAULT_SKULLS = false;
-	public static final boolean DEFAULT_PUMPKINS = false;
-	public static final boolean DEFAULT_ANYTHING = false;
+	public static final boolean DEFAULT_SKULLS = true;
+	public static final boolean DEFAULT_PUMPKINS = true;
+	public static final boolean DEFAULT_ANYTHING = true;
 
 	public static final Path CONFIG_FILE =
 			FabricLoader.getInstance().getGameDir()
@@ -175,7 +175,7 @@ public final class ArmourSoundTweak implements ClientModInitializer {
 					equipment.add(stack.copy());
 				}
 
-				if (client.currentScreen instanceof InventoryScreen) {
+				if (client.currentScreen instanceof InventoryScreen || client.currentScreen instanceof CreativeInventoryScreen) {
 					final var newEquipment = equipment.iterator();
 					final var oldEquipment = this.oldEquipment.iterator();
 
